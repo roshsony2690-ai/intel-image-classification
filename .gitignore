@@ -1,0 +1,56 @@
+﻿# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+
+# Model files (too large for GitHub)
+*.h5
+*.hdf5
+*.ckpt
+*.pb
+models/
+
+# Dataset files (too large)
+data/
+*.zip
+*.tar.gz
+*.tgz
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Logs and plots
+*.log
+plots/
+*.png
+*.jpg
+*.jpeg
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.venv
+
+# Python distribution
+dist/
+build/
+*.egg-info/
