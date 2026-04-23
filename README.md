@@ -126,9 +126,19 @@ Fully Connected Layers
 | Horizontal Flip | Yes |
 | Fill Mode | Nearest |
 
-## 🚀 Installation & Setup
+## 📊 Final Results Summary
+TEST ACCURACY: 81.73%
 
-### Prerequisites
-```bash
-Python 3.11 or higher
-pip package manager
+Per-Class Performance:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Class        Precision    Recall      F1-Score
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Buildings    0.91         0.75        0.82
+Forest       0.74         0.99        0.85
+Glacier      0.87         0.74        0.80
+Mountain     0.75         0.83        0.79
+Sea          0.84         0.87        0.85
+Street       0.86         0.72        0.78
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Macro Avg    0.83         0.82        0.82
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
