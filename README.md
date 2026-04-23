@@ -126,19 +126,55 @@ Fully Connected Layers
 | Horizontal Flip | Yes |
 | Fill Mode | Nearest |
 
-## 📊 Final Results Summary
-TEST ACCURACY: 81.73%
+## 📊 Model Performance
 
-Per-Class Performance: 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
-Class        Precision    Recall      F1-Score 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
-Buildings    0.91         0.75        0.82 
-Forest       0.74         0.99        0.85 
-Glacier      0.87         0.74        0.80 
-Mountain     0.75         0.83        0.79 
-Sea          0.84         0.87        0.85 
-Street       0.86         0.72        0.78 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
-Macro Avg    0.83         0.82        0.82 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+### 🎯 Test Accuracy
+
+**81.73%**
+
+---
+
+### 📌 Per-Class Performance
+
+```id="v8k2dp"
+Class        Precision    Recall      F1-Score
+------------------------------------------------
+Buildings      0.91         0.75        0.82
+Forest         0.74         0.99        0.85
+Glacier        0.87         0.74        0.80
+Mountain       0.75         0.83        0.79
+Sea            0.84         0.87        0.85
+Street         0.86         0.72        0.78
+------------------------------------------------
+Macro Avg      0.83         0.82        0.82
+```
+
+---
+
+### 🔍 Key Insights
+
+* **Highest Recall:** Forest (0.99)
+  → Model is very good at identifying forest images
+
+* **Highest Precision:** Buildings (0.91)
+  → Predictions for buildings are highly accurate
+
+* **Balanced Class:** Sea
+  → Good precision and recall (0.84 / 0.87)
+
+* **Challenging Classes:**
+
+  * Buildings (lower recall)
+  * Street (lower recall)
+    → Model sometimes confuses these with similar scenes
+
+---
+
+### 🚀 Overall Summary
+
+The CNN model demonstrates strong performance with:
+
+* **Good generalization** across all classes
+* **Balanced precision and recall** (Macro F1 ≈ 0.82)
+* Effective feature extraction using deep convolutional layers
+
