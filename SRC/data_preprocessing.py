@@ -94,7 +94,7 @@ def create_test_generator(test_dir, img_height=150, img_width=150, batch_size=32
 
 if __name__ == "__main__":
     # Test the preprocessing
-    data_dir = "data/intel-image-classification"
+    data_dir = "data"
     class_names, train_dir, test_dir = explore_dataset(data_dir)
     train_gen, val_gen = create_data_generators(train_dir)
     test_gen = create_test_generator(test_dir)
